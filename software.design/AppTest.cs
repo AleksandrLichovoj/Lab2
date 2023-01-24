@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Xunit;
 
 public class AppTest
@@ -19,6 +19,15 @@ public class AppTest
     {
         string paintingid = "2";
         string paintname = "X";
+        string author = "some dude";
+        string country = "Earth";
+        string year = "XXXX";
+    }
+    [Fact]
+    public void WrongID()
+    {
+        string paintingid = " ";
+        string paintname = "Namesake";
         string author = "some dude";
         string country = "Earth";
         string year = "XXXX";
