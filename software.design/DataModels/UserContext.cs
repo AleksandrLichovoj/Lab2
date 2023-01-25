@@ -14,7 +14,7 @@ public class ProductContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Product>()
-            .HasKey(b => b.Id);
+            .HasKey(b => b.paintingid);
 
         modelBuilder.Entity<Product>().ToTable("products", schema: "product");
     }
