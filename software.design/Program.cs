@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ProductContext>(options =>
     options
-        .UseNpgsql("Host=localhost;Database=lab2;Username=man;Password=cmonman")
+        .UseNpgsql("Host=aleliciskfu19;Database=postgres;Username=man;Password=cmonman")
         .UseSnakeCaseNamingConvention());
 
 builder.Services.AddScoped<ProductService>();
