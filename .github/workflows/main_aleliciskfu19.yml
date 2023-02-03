@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16]
 
     steps:
       - uses: actions/checkout@v2
@@ -55,3 +58,4 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_66ECC290DCBA43DABA4B4A6DB430910E }}
           package: .
+  
